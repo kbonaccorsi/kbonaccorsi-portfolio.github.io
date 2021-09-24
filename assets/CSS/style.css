@@ -1,13 +1,45 @@
+/* color scheme from https://coolors.co/07060c-bf2237-f34212-188679-b9d04f */
 :root{
+    --black:(07060C);
+    --red:(BF2237);
+    --orange: (F34212);
+    --blue: (188679);
+    --green: (B9D04F);
+
     
 }
 
 * {
     background-color: black;
+    font-family: serif;
+    font-size: 18px;
     color: white;
 
 }
 
-.class about me {
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color:red;
+    height: 95px;   
+}
 
+/* replace placeholder image with actual image of choice */
+.work samples img {
+    width: 45px;
+    height: 45px;
+}
+
+/* makes a mobile responsive layout */
+@media screen and (max-width: 992px) {
+    
+    }
+
+@media screen and (max-width: 768px) {
+    
+}
+
+@media screen and (max-width: 576px) {
+    
 }
