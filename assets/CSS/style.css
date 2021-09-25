@@ -10,7 +10,7 @@
 }
 
 * {
-    background-color: var(--black);
+    background-color: black;
     font-family: serif;
     font-size: 18px;
     color: white;
@@ -21,12 +21,17 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-color:var(--red);
+    background-color:red;
     height: 95px;   
 }
 h1 {
     font-size: 40px;
-    font-weight:bold;  
+    font-weight:bold;
+}
+
+header h1 img {
+    height: 95px;
+    width: 95px;
 }
 /* replace placeholder image with actual image of choice */
 .work samples img {
