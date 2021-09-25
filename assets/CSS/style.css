@@ -5,16 +5,13 @@
     --orange: (#F34212);
     --blue: (#188679);
     --green: (#B9D04F);
-
-    
 }
 
-* {
+body {
     background-color: black;
     font-family: serif;
     font-size: 18px;
     color: white;
-
 }
 
 header {
@@ -22,18 +19,35 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     background-color:red;
-    height: 95px;   
+    height: 150px;
+    border: medium solid white;
+    padding: 50px;
+    margin: 3px;  
 }
 h1 {
     font-size: 40px;
     font-weight:bold;
+    background-color: red;
 }
 
+/* replace placeholder image with actual image of choice */
 header h1 img {
     height: 95px;
     width: 95px;
 }
-/* replace placeholder image with actual image of choice */
+
+
+
+section .info {
+    display: flex;
+}
+aside .contact {
+    display: flex;
+}
+.work {
+    display: flex;
+}
+
 .work samples img {
     width: 45px;
     height: 45px;
@@ -41,13 +55,13 @@ header h1 img {
 
 /* makes a mobile responsive layout */
 @media screen and (max-width: 992px) {
-    
+    display: block;
     }
 
 @media screen and (max-width: 768px) {
-    
+    display: block;
 }
 
 @media screen and (max-width: 576px) {
-    
+    display: block;
 }
