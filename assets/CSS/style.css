@@ -1,16 +1,16 @@
 /* color scheme from https://coolors.co/07060c-bf2237-f34212-188679-b9d04f */
 :root{
-    --black:(07060C);
-    --red:(BF2237);
-    --orange: (F34212);
-    --blue: (188679);
-    --green: (B9D04F);
+    --black:(#07060C);
+    --red:(#BF2237);
+    --orange: (#F34212);
+    --blue: (#188679);
+    --green: (#B9D04F);
 
     
 }
 
 * {
-    background-color: black;
+    background-color: var(--black);
     font-family: serif;
     font-size: 18px;
     color: white;
@@ -21,10 +21,13 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-color:red;
+    background-color:var(--red);
     height: 95px;   
 }
-
+h1 {
+    font-size: 40px;
+    font-weight:bold;  
+}
 /* replace placeholder image with actual image of choice */
 .work samples img {
     width: 45px;
