@@ -12,6 +12,7 @@ body {
     font-family: serif;
     font-size: 18px;
     color: white;
+    line-height: 1.5;
 }
 
 header {
@@ -19,9 +20,9 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     background-color:red;
-    height: 150px;
+    height: 75px;
     border: medium solid white;
-    padding: 50px;
+    padding: 5px;
     margin: 3px;  
 }
 h1 {
@@ -31,21 +32,36 @@ h1 {
 }
 
 /* replace placeholder image with actual image of choice */
-header h1 img {
-    height: 95px;
-    width: 95px;
-}
+header img {
+    height: 100%;
+    width: auto;
+    vertical-align: top left;
 
+}
 
 
 section .info {
     display: flex;
+    height: auto;
+    background-color: orange;
+    padding: 80px;
+    margin: 10px;
+    
 }
-aside .contact {
+
+section .contact {
     display: flex;
+    height: auto;
+    background-color: green;
+    padding: 80px;
+    margin: 10px;
 }
-.work {
+section .work {
     display: flex;
+    height: auto;
+    background-color: blue;
+    padding: 80px;
+    margin: 10px;
 }
 
 .work samples img {
