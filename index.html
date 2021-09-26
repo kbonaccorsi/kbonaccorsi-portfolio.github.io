@@ -15,7 +15,7 @@
             <h1>Kaileigh Bonaccorsi</h1>
             <p>Software Engineer</p>
         </div>
-        <div><img src="./images/thinking bitmoji.png" alt="thinking/loading bar bitmoji" id="img-bitmoji"></div>
+        <img src="./images/smile bitmoji.png" alt="smiling bitmoji" id="img-bitmoji-smiling">
         <nav class="menu">
             <!-- Add memes'/gif's for these? -->
             <div><a href=".info">About Me</a></div>
@@ -23,105 +23,98 @@
             <div><a href=".work">Work Samples</a></div>
         </nav>
     </header>
+        <div class="info">
+            <h3>About me...</h3>
+                <p>
+                    I began my software engineering journey in September of 2021.  I decided to make a career change from teaching after 6 years, and 2 school districts.  I will be making a program for teachers and students to use in the classroom to help differentiate learning.
+                </p>
+        </div>
+    
 
     <!-- #img-background: https://unsplash.com/photos/bsW_svvqohA?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink 
     <img src="./images/farrinni-bsW_svvqohA-unsplash.jpg" alt="poppys in a green field" id="img-background"> -->
         <!-- Bitmoji (can I make it update in realtime if I change it somewhere else?)  -->
     
     
-    <section>
-        <div class="info">
-        <h3>All you need to know about me is...</h3>
-        <img src="./images/thinking bitmoji.png" alt="thinking/loading bar bitmoji" id="img-bitmoji">
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            </p>
-        </div>
-    </section>
-
     <main>
-        <section>
-            <div class="work">
-            <h3>Look what I can do!</h3>
-                <div id="work-1">
-                <img src="https://picsum.photos/200" alt="temporary placeholder">
-                <h4> Work 1 </h4>
+        <div class="contact">
+            <!-- Insert a smiley face with eyebrows moving up and down after offer -->
+            <!-- Github mark: https://github.com/logos -->
+            <!-- LinkedIn logo: https://brand.linkedin.com/policies?trk=homepage-basic_footer-brand-policy -->
+            <!-- Gmail logo: https://about.google/brand-resource-center/brand-elements/ -->
+            <h3>Need to reach me?</h3>
+            <img src="https://picsum.photos/200" alt="temporary placeholder">
+            <p>You are welcome to call or email me, or fill out the information below and I will reach out to you within 24-48 hours.</p>
+            <ul>
+                <li class="phone">Phone Number:(555)555-5555</li>
+                <li><img src="images/gmail.png" alt="gmail logo" class="gmail">kaileigh.bonaccorsi@gmail.com</li>
+                <li><img src="./images/GitHub-Mark-Light-64px.png" alt="GitHub logo"><a class="github" href="kbonaccorsi.github.io">visit my GitHub</a></li>
+                <li><img src="images/linkedin logo.png" alt=" linkedin logo"><a class="linkedin" href="https://www.linkedin.com/in/kaileigh-bonaccorsi-722055209/">Visit my LinkedIn </a></li>
+            </ul>
+            <form>
+                <div>
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="fname"
+                    placeholder="ex. John">
                 </div>
-                <div id="work-2">
-                <img src="https://picsum.photos/200" alt="temporary placeholder">
-                <h4> Work 2 </h4>
+                <div>
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lname"
+                    placeholder="ex. Doe">
                 </div>
-                <div id="work-3">
-                <img src="https://picsum.photos/200" alt="temporary placeholder">
-                <h4> Work 3 </h4>
+                <div>
+                    <label for="email">Email Address</label>
+                    <input type="text" id="email" name="email"
+                    placeholder="ex. yourname@website.com">
                 </div>
-                <div id="work-4">
-                <img src="https://picsum.photos/200" alt="temporary placeholder">
-                <h4> Work 4 </h4>
+                <div>
+                    <label for="tel">Telephone Number</label>
+                    <input type="tel" id="tel" name="tel"
+                    placeholder= "555-555-5555"
+                    pattern=[0-9]{3}-[0-9]{3}-[0-9]{4}>
                 </div>
-                <div id="work-5">
-                <img src="https://picsum.photos/200" alt="temporary placeholder">
-                <h4> Work 5 </h4>
+                <div>
+                    <p>How do you prefer I contact you?</p>
+                    <input type="radio" id="telephone" name="reach out" value="telephone">
+                    <label for="telephone">phone call</label>
+                    <input type="radio" id="email" name="reach out" value="email">
+                    <label for="email">email</label>
+                    <input type="radio" id="neither" name="reach out" value="neither">
+                    <label for="neither">neither, please don't contact me</label>
                 </div>
-            </div>
-        </section>
-        
-        
+                <div>
+                    <label for="comment">Questions, Comments, Job Offer?</label>
+                    <input type="text" name="comment" id="comment"
+                    placeholder= "please leave your message here">
+                </div>
+                <!-- When submit is clicked a message says thank you for your message.  I will respond to you within 24-48 hours. Figure out how to make the submit button actually work.-->
+                <div>                
+                    <input type="submit" value="submit">
+                </div>
+            </form>
+        </div>
 
-        <aside>
-            <div class="contact">
-    <!-- Insert a smiley face with eyebrows moving up and down after offer -->
-                <h3>Need to reach me?</h3>
-                <img src="https://picsum.photos/200" alt="temporary placeholder">
-                <p>You are welcome to call or email me, or fill out the information below and I will reach out to you within 24-48 hours.</p>
-                <ul>
-                    <li class="phone">Phone Number:(555)555-5555</li>
-                    <li>Email Address: <a class="email" href="kaileigh.bonaccorsi@gmail.com">kaileigh.bonaccorsi@gmail.com</a></li>
-                </ul>
-                
-                <form>
-                    <div>
-                        <label for="fname">First Name</label>
-                        <input type="text" id="fname" name="fname"
-                        placeholder="ex. John">
-                    </div>
-                    <div>
-                        <label for="lname">Last Name</label>
-                        <input type="text" id="lname" name="lname"
-                        placeholder="ex. Doe">
-                    </div>
-                    <div>
-                        <label for="email">Email Address</label>
-                        <input type="text" id="email" name="email"
-                        placeholder="ex. yourname@website.com">
-                    </div>
-                    <div>
-                        <label for="tel">Telephone Number</label>
-                        <input type="tel" id="tel" name="tel"
-                        placeholder= "555-555-5555"
-                        pattern=[0-9]{3}-[0-9]{3}-[0-9]{4}>
-                    </div>
-                    <div>
-                        <p>How do you prefer I contact you?</p>
-                        <input type="radio" id="telephone" name="reach out" value="telephone">
-                        <label for="telephone">phone call</label>
-                        <input type="radio" id="email" name="reach out" value="email">
-                        <label for="email">email</label>
-                        <input type="radio" id="neither" name="reach out" value="neither">
-                        <label for="neither">neither, please don't contact me</label>
-                    </div>
-                    <div>
-                        <label for="comment">Questions, Comments, Job Offer?</label>
-                        <input type="text" name="comment" id="comment"
-                        placeholder= "please leave your message here">
-                    </div>
-    <!-- When submit is clicked a message says thank you for your message.  I will respond to you within 24-48 hours. Figure out how to make the submit button actually work.-->
-                    <div>                
-                        <input type="submit" value="submit">
-                    </div>
-                </form>
+        <div class="work">
+        <h3>Look what I can do!</h3>
+            <!-- Coming Soon image: https://pixabay.com/photos/coming-soon-next-announcement-5942155/ -->
+            <div id="work-1">
+                <h4> Work 1 </h4>
+                <img src="./images/Project 1- Horiseon Refactor.png" alt="thumbnail of Horiseon refactored webpage">
+                <a href="https://kbonaccorsi.github.io/bootcamp-portfolio-piece-1/"></a>
             </div>
-        </aside>
+
+            <h4> Work 2 </h4>
+                <div id="project-2"> <!--<a href="#">Coming Soon</a> -->
+                <img src="./images/coming soon.jpg" alt="coming soon placeholder"></div>
+
+            <h4> Work 3 </h4>
+                <div id="project-3"> <!--<a href="#">Coming Soon</a> -->
+                <img src="./images/coming soon.jpg" alt="coming soon placeholder"></div>
+                
+            <h4> Work 4 </h4>
+                <div id="project-4"> <!--<a href="#">Coming Soon</a> -->
+                    <img src="./images/coming soon.jpg" alt="coming soon placeholder"></div>
+        </div>
     </main>
 
     <footer>
