@@ -1,5 +1,5 @@
 /* color scheme from https://coolors.co/07060c-bf2237-f34212-188679-b9d04f */
-:root{
+:root {
     --black:(#07060C);
     --red:(#BF2237);
     --orange: (#F34212);
@@ -7,28 +7,76 @@
     --green: (#B9D04F);
 }
 
-body {
-    background-color: black;
-    font-family: serif;
-    font-size: 18px;
-    color: white;
-    line-height: 1.5;
+* {
+    box-sizing: border-box;
 }
 
+/* header and all components within */
 header {
+    border: medium solid black;
+    padding: 45px;
+    text-align: center;
+    /* background-image:url(./images/farrinni-bsW_svvqohA-unsplash.jpg) */
+    background-color: red;
+    line-height: 2;
+}
+
+h1 {
+    font-size: 70px;
+    font-weight: 900;
+    display: block;
+    text-align: center;
+}
+
+header p {
+    font-size: 50px;
+    display: block;
+    text-align: center;
+}
+
+/* navigation bar and all components within */
+nav {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    background-color:red;
-    height: 75px;
-    border: medium solid white;
-    padding: 5px;
-    margin: 3px;  
+    background-color: orange;
+    padding: 20px;
+    border: 5px solid black;
+    display: block;
+    justify-content: center;
 }
-h1 {
-    font-size: 40px;
-    font-weight:bold;
-    background-color: red;
+
+nav a {
+    font-size: 30px;
+    margin: 0px 50px 0px 50px;
+}
+
+#img-background {
+    height: 150px;
+    width: auto;
+/* move image to the left, or put as background-image */
+}
+
+#img-bitmoji {
+    height: 150px;
+    width: auto;
+}
+
+a {
+    text-decoration: none;
+
+}
+/*  */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+
+
+#img-background {
+    height: 350px;
+    width: auto;
+
 }
 
 /* replace placeholder image with actual image of choice */
@@ -39,45 +87,56 @@ header img {
 
 }
 
-
-section .info {
+main {
     display: flex;
-    height: auto;
-    background-color: orange;
-    padding: 80px;
-    margin: 10px;
-    
+    flex-wrap: wrap;
+    flex-direction:column;
+    margin-top:5px;
 }
+section {
+    display: block;
+    flex: 70%;
+    padding: 10px;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    justify-content:space-between;
 
-section .contact {
-    display: flex;
-    height: auto;
-    background-color: green;
-    padding: 80px;
-    margin: 10px;
-}
-section .work {
-    display: flex;
-    height: auto;
-    background-color: blue;
-    padding: 80px;
-    margin: 10px;
 }
 
-.work samples img {
-    width: 45px;
-    height: 45px;
+aside {
+    flex: 30%;
+    padding: 20px;
+    flex-wrap: wrap;
+    background-color: greenyellow;
 }
+
+#work {
+    height: 24px;
+    width: 24px;
+    padding: 3px;
+    margin: 2px;
+}
+
 
 /* makes a mobile responsive layout */
 @media screen and (max-width: 992px) {
-    display: block;
-    }
+    header {
+        background-color: white;
+    };
+    /* nav { 
+        background-color: grey;
+    };*/
+}
 
 @media screen and (max-width: 768px) {
-    display: block;
+    header {
+        background-color: grey;
+    };
 }
 
 @media screen and (max-width: 576px) {
-    display: block;
+    header {
+        background-color: goldenrod;
+    };
 }
