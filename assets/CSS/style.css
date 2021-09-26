@@ -7,107 +7,90 @@
     --green: (#B9D04F);
 }
 
+
 * {
     box-sizing: border-box;
 }
 
+/* all elements and content contained in the body element */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    /* designates body as a flex box */
+    display: flex;
+    /* content wraps as the screen size decreases */
+    flex-wrap: wrap;
+    /* designates page boxes are in columns */
+    flex-direction: column;
+}
+
+
 /* header and all components within */
 header {
-    border: medium solid black;
-    padding: 45px;
-    text-align: center;
-    /* background-image:url(./images/farrinni-bsW_svvqohA-unsplash.jpg) */
+    flex: 50%;
+    flex-wrap: wrap;    
+    margin: 30px;
+    justify-content:space-evenly;
+    align-items: center;
+    display: inline-flex;
     background-color: red;
-    line-height: 2;
+    border: medium solid black;
+}
+
+.heading {
+    text-align: center;
 }
 
 h1 {
     font-size: 70px;
     font-weight: 900;
-    display: block;
-    text-align: center;
+    padding: 20px;
 }
+
 
 header p {
     font-size: 50px;
-    display: block;
-    text-align: center;
+    padding: 20px;
 }
+
+
+#img-bitmoji {
+    height: auto;
+    width: auto;
+}
+
+
 
 /* navigation bar and all components within */
 nav {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: orange;
-    padding: 20px;
-    border: 5px solid black;
-    display: block;
-    justify-content: center;
+    line-height:2;
+    text-align: center;
 }
 
+
+/* add pseudo element before and after each navigation item, and a pseudo class for each button*/
 nav a {
     font-size: 30px;
-    margin: 0px 50px 0px 50px;
-}
-
-#img-background {
-    height: 150px;
-    width: auto;
-/* move image to the left, or put as background-image */
-}
-
-#img-bitmoji {
-    height: 150px;
-    width: auto;
-}
-
-a {
     text-decoration: none;
-
-}
-/*  */
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
+    color: black;
 }
 
 
-
-#img-background {
-    height: 350px;
-    width: auto;
-
-}
-
-/* replace placeholder image with actual image of choice */
-header img {
-    height: 100%;
-    width: auto;
-    vertical-align: top left;
-
-}
-
-main {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction:column;
-    margin-top:5px;
-}
 section {
-    display: block;
     flex: 70%;
-    padding: 10px;
+    line-height:2;
+    border: medium solid black;
+    margin: 30px;
     text-align: center;
-    border-style: solid;
-    border-width: 1px;
     justify-content:space-between;
-
 }
 
 aside {
     flex: 30%;
-    padding: 20px;
-    flex-wrap: wrap;
+    line-height:2;
+    border: medium solid black;
+    margin: 30px;
+    text-align: center;
     background-color: greenyellow;
 }
 
@@ -117,7 +100,6 @@ aside {
     padding: 3px;
     margin: 2px;
 }
-
 
 /* makes a mobile responsive layout */
 @media screen and (max-width: 992px) {
