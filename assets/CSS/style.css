@@ -68,11 +68,25 @@ nav {
 }
 
 /* add pseudo element before and after each navigation item, and a pseudo class for each button*/
-nav a {
+button {
     font-size: 30px;
     font-weight: 700;
     text-decoration: none;
     color: black;
+    border: 3px dotted black;
+}
+
+button:hover {
+    background-color: purple;
+    border: 7px solid black;
+}
+button:active {
+    background-color: purple;
+    border: 6px solid black;
+}
+button:focus {
+    background-color: purple;
+    border: 5px solid black;
 }
 
 
