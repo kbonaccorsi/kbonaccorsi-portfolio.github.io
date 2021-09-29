@@ -5,6 +5,7 @@ This portfolio is designed to give the user information about Kaileigh Bonaccors
 
 
 screenshot:
+![_C__Users_kaile_Documents_class-content_kbonaccorsi github io_index html (1)](https://user-images.githubusercontent.com/86372011/135186438-81541495-3cf2-4d7c-8e47-cf53c576cfab.png)
 
 
 
