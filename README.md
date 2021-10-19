@@ -4,7 +4,7 @@ Personal portfolio of Kaileigh Bonaccorsi
 This portfolio is designed to give the user information about Kaileigh Bonaccorsi.  It shows information about her, previous work samples, and different ways to get in touch with her.  The user is able to interact with the webpage, and use accessibility features successfully.
 
 URL:
-Professional Portfolio- https://kbonaccorsi.github.io/
+Professional Portfolio- https://github.com/kbonaccorsi/kbonaccorsi-portfolio.github.io
 
 screenshots representing media queries:
 
