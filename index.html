@@ -1,96 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kaileigh Bonaccorsi</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- global bootstrap link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- global fontawesome link -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <!-- resets styling for different browsers -->
     <link rel="stylesheet" href="./assets/CSS/reset.css" />
-    <link rel="stylesheet" href="./assets/CSS/style.css" />
+    <!-- local stylesheet -->
+    <!-- <link rel="stylesheet" href="./assets/CSS/style.css" /> -->
+
+    <title>Kaileigh Bonaccorsi</title>
 </head>
 
 <body>
-    <section>
-        <div class="heading">
+    <main class="container-fluid">
+        <!-- HEADER AND NAVIGATION -->
+        <header class="jumbotronHeader container-fluid bg-dark text-light text-center">
             <h1>Kaileigh Bonaccorsi</h1>
-            <p>Software Engineer</p>
-        </div>
-        <img src="./images/smile bitmoji.png" alt="smiling bitmoji" id="img-bitmoji-smiling">
-        <nav class="menu">
-            <!-- Add memes'/gif's for these? -->
-            <button><a href="#info">About Me</a></button>
-            <button><a href="#contact">Let's Talk</a></button>
-            <button><a href="#work">Work Samples</a></button>
-        </nav>
-    </section>
-        <div id="info">
-            <img src="http://www.themarketingsage.com/wp-content/uploads/2015/08/about-me-leon-severan-we-buy-houses.jpg" alt="A little bit about me">
-                <p>
-                    I began my software engineering journey in September of 2021.  I decided to make a career change from teaching after 6 years, and 2 school districts.  I will be making a program for teachers and students to use in the classroom to help differentiate learning. I live in San Antonio, Texas with my husband, daughter, cat, and dog.
+            <p class="lead">Software Engineer</p>
+            <img src="./images/smile bitmoji.png" class="w-25" alt="smiling bitmoji" id="img-bitmoji-smiling">
+            <nav>
+                <ul class="nav justify-content-around text-light">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#info">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Let's Talk</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#work">Work Samples</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- ABOUT ME -->
+        <section>
+            <div class="row col w-100 mt-3" id="info">
+                <img src="http://www.themarketingsage.com/wp-content/uploads/2015/08/about-me-leon-severan-we-buy-houses.jpg"
+                    class="aboutMe col-3" alt="A little bit about me">
+                <p class=" col-9 text-center">
+                    I began my software engineering journey in September of 2021 after deciding to make a career change
+                    from teaching elementary school. There are many applications I'm thinking of making, but, my main
+                    goal for the future is to make a program for teachers and students to use in the classroom to help
+                    differentiate learning. I might be making a career change, but education will always be an important
+                    aspect of my life. I live in San Antonio, Texas with my family, and I am looking forward to what
+                    life brings.
                 </p>
-        </div>
-    
-
-    <!-- #img-background: https://unsplash.com/photos/bsW_svvqohA?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink -->
-    
-    
-    <main>
-        <div id="contact">
-            <!-- Insert a smiley face with eyebrows moving up and down after offer -->
-            <!-- Github mark: https://github.com/logos -->
-            <!-- LinkedIn logo: https://brand.linkedin.com/policies?trk=homepage-basic_footer-brand-policy -->
-            <!-- Gmail logo: https://about.google/brand-resource-center/brand-elements/ -->
-            <h3>Need to reach me?</h3>
-                <p>You are welcome to call or email me, or fill out the information below, and I will reach out to you within 24-48 hours.</p>
-                <br>
-                <div class="phone">Phone Number: (555)555-5555</div>
-                <div class="email">Email: kaileigh.bonaccorsi@gmail.com</div>
-                <div><a href="https://github.com/kbonaccorsi">
-                    <img src="./images/GitHub-Mark-64px.png" alt="GitHub logo">GitHub</a>
-                </div>
-                <div><a href="https://www.linkedin.com/in/kaileigh-bonaccorsi-722055209/">
-                    <img src="./images/linkedin logo.png" alt="linkedin logo">LinkedIn</a>
-                </div>
-        </div>
-
-        <div id="work">
-        <h3>Look what I can do!</h3>
-            <!-- Coming Soon image: https://pixabay.com/photos/coming-soon-next-announcement-5942155/ -->
-            <div><a href="https://kbonaccorsi.github.io/bootcamp-portfolio-piece-1/">
-            <img src="./images/Project 1- Horiseon Refactor.png" alt="thumbnail of Horiseon refactored webpage"></a></div>
-
-            <div><a href="https://kbonaccorsi.github.io/Password-Generator/">
-                <img src="./images/password-generator-screenshot.png" alt="password generator screenshot">
-                </a>
             </div>
+        </section>
 
-            <div><a href="https://kbonaccorsi.github.io/4-code-quiz/">
-                <img src="./images/136044559-1e781f4f-f2a6-41e1-ad6e-e61c54a8e61b.gif" alt="gif of code quiz">
-                </a>
+        <div class="row m-2">
+            <div class="row">
+                <!-- CONTACT INFORMATION -->
+                <div class="col-3 flex-wrap bg-dark text-light p-3" id="contact">
+                    <!-- image from: https://sloandesouza.com/contact/ -->
+                    <img src="https://sloandesouza.com/wp-content/uploads/2019/10/ContactMe-300x198.jpg" class="w-75"
+                        alt="Contact me" />
+                    <p></p>
+                    <div class="phone"><i class="fas fa-phone"></i> Phone Number: (555)555-5555</div>
+                    <p></p>
+                    <div class="email"><i class="fas fa-envelope"></i> Email: kaileigh.bonaccorsi@gmail.com</div>
+                    <p></p>
+                    <div><img src="./images/GitHub-Mark-64px.png" alt="GitHub logo"><a
+                            href="https://github.com/kbonaccorsi"> GitHub</a>
+                    </div>
+                    <p></p>
+                    <div><img src="./images/linkedin logo.png" class="w-25" alt="linkedin logo"><a
+                            href="https://www.linkedin.com/in/kaileigh-bonaccorsi-722055209/"> LinkedIn</a>
+                    </div>
+                </div>
+                <!-- WORK SAMPLES -->
+                <!-- Coming Soon image: https://pixabay.com/photos/coming-soon-next-announcement-5942155/ -->
+                <div class=" col-9 container-fluid d-flex flex-row flex-wrap justify-content-center align-content-center h-auto bg-info"
+                    id="work-samples">
+                    <div class="row w-100 m-2 p-1">
+                        <h2>WORK SAMPLES</h2>
+                    </div>
+                    <div class="d-flex flex-row flex-wrap justify-content-center">
 
-            </div><div><a href=" https://kbonaccorsi.github.io/5-work-day-scheduler/ ">
-                <img src="./images/scheduler gif.gif" alt="gif of scheduler">
-                </a>
+                        <div class="card work-sample w-50 m-1" id="work-sample-gp1">
+                            <img src="https://user-images.githubusercontent.com/86372011/138792816-28729a8d-c76f-44ce-85e8-c3a3b3d02d91.gif" class="card-img-top"
+                                alt="gif of Chopsticks and Chill">
+                            <div class="card-body">
+                                <h5 class="card-title">Chopsticks and Chill</h5>
+                                <p class="card-text">Collaborate with a team to create an application that uses local storage and 2 API's.</p>
+                                <a href="https://github.com/kbonaccorsi/group-project-1"
+                                    class="btn btn-primary m-1">GitHub Repo</a>
+                                <a href="https://kbonaccorsi.github.io/group-project-1/"
+                                    class="btn btn-secondary m-1 ">Deployed Link</a>
+                            </div>
+                        </div>
+                        
+                        <div class="card work-sample w-25 m-1" id="work-sample-1">
+                            <img src="./images/Horiseon Social Solution Services.gif" class="card-img-top"
+                                alt="gif of Horiseon refactored webpage">
+                            <div class="card-body">
+                                <h5 class="card-title">Code Refactor</h5>
+                                <p class="card-text">Refactor a webpage to make it more accessible</p>
+                                <a href="https://github.com/kbonaccorsi/bootcamp-portfolio-piece-1"
+                                    class="btn btn-primary m-1">GitHub Repo</a>
+                                <a href="https://kbonaccorsi.github.io/bootcamp-portfolio-piece-1/"
+                                    class="btn btn-secondary m-1 ">Deployed Link</a>
+                            </div>
+                        </div>
 
-            </div><div><a href="#">
-                <img src="./images/coming soon.jpg" alt="coming soon temporary placeholder">
-                </a>
+                        <div class="card work-sample w-25 m-1" id="work-sample-2">
+                            <img src="./images/password-generator.gif" class="card-img-top"
+                                alt="gif of password generator">
+                            <div class="card-body">
+                                <h5 class="card-title">Password Generator</h5>
+                                <p class="card-text">Make a password generator that takes in specific perameters, and
+                                    produces a random password</p>
+                                <a href="https://github.com/kbonaccorsi/Password-Generator"
+                                    class="btn btn-primary m-1">GitHub Repo</a>
+                                <a href="https://kbonaccorsi.github.io/Password-Generator/"
+                                    class="btn btn-secondary m-1">Deployed Link</a>
+                            </div>
+                        </div>
 
-            </div><div><a href="#">
-                <img src="./images/coming soon.jpg" alt="coming soon temporary placeholder">
-                </a>
-                
-            </div><div><a href="#">
-                <img src="./images/coming soon.jpg" alt="coming soon temporary placeholder">
-                </a>
+                        <div class="card work-sample w-25 m-1" id="work-sample-3">
+                            <img src="./images/code-quiz.gif" class="card-img-top" alt="gif of code quiz">
+                            <div class="card-body">
+                                <h5 class="card-title">Code Quiz</h5>
+                                <p class="card-text">Make a quiz that earns points with correct answers and loses points
+                                    with incorrect answers.</p>
+                                <a href="https://github.com/kbonaccorsi/4-code-quiz" class="btn btn-primary m-1">GitHub
+                                    Repo</a>
+                                <a href="https://kbonaccorsi.github.io/4-code-quiz/"
+                                    class="btn btn-secondary m-1">Deployed
+                                    Link</a>
+                            </div>
+                        </div>
+
+                        <div class="card work-sample w-25 m-1" id="work-sample-4">
+                            <img src="https://user-images.githubusercontent.com/86372011/138600371-2de5e32c-f21a-40d8-a0c3-5a16b3756500.png" class="card-img-top" alt="thumbnail of team after being generated">
+                            <div class="card-body">
+                                <h5 class="card-title">Team Profile Generator</h5>
+                                <p class="card-text">A command-line application that takes in information about employees on a software engineering team, then generates an HTML webpage that displays summaries for each person.</p>
+                                <a href="https://github.com/kbonaccorsi/10-oop-team-profile-generator"
+                                    class="btn btn-primary m-1">GitHub
+                                    Repo</a>
+                                <a href="https://watch.screencastify.com/v/VUYEcu2T9OYTvehNk5uM"
+                                    class="btn btn-secondary m-1">Walkthrough Video</a>
+                            </div>
+                        </div>
+
+                        <div class="card work-sample w-25 m-1" id="work-sample-5">
+                            <img src="./images/employee-tracker.PNG" class="card-img-top" alt="thumbnail of table holding information about employees">
+                            <div class="card-body">
+                                <h5 class="card-title">Employee Tracker</h5>
+                                <p class="card-text">A command-line application to manage a company's employee database.</p>
+                                <a href="https://github.com/kbonaccorsi/12-employee-tracker"
+                                    class="btn btn-primary m-1">GitHub
+                                    Repo</a>
+                                <a href="https://watch.screencastify.com/v/GWRjxP6ZX8mtJJonY0b0"
+                                    class="btn btn-secondary m-1">Walkthrough Video</a>
+                            </div>
+                        </div>
+
+                        <div class="card work-sample w-25 m-1" id="work-sample-soon">
+                            <img src="./images/coming soon.jpg" class="card-img-top" alt="coming soon">
+                            <div class="card-body">
+                                <!-- <h5 class="card-title">insert title</h5>
+                                <p class="card-text">insert description</p>
+                                <a href="https://github.com/kbonaccorsi/insert path" class="btn btn-primary">GitHub
+                                    Repo</a>
+                                <a href="https://kbonaccorsi.github.io/insert path/"
+                                    class="btn btn-secondary">Deployed Link</a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
-
-    <footer>
-        
-    </footer>
-
 </body>
 
 </html>
